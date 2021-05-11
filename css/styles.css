@@ -968,8 +968,9 @@ body {
 }
 @media (max-width: 599.98px) {
   .design-content-iphone_wrap {
-    left: calc(50% + 24 * ((100vw - 320px)/(600 - 320)));
-    bottom: calc(-52px - 40 * ((100vw - 320px)/(600 - 320)));
+    left: auto;
+    right: 0;
+    bottom: calc(-40px - 40 * ((100vw - 320px)/(600 - 320)));
   }
 }
 @media (max-width: 539.98px) {

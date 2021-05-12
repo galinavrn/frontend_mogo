@@ -149,6 +149,8 @@ body {
 }
 .header-navigation_link:hover span {
   color: #fce38a;
+  padding-bottom: 9px;
+  border-bottom: 3px solid #fce38a;
   transition: 0.25s;
 }
 .header-navigation_link-img {

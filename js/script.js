@@ -1,27 +1,9 @@
-/* Fullscreen для IE
-function fullscreen() {
-  var height=$(Window).outerHeight()
-  $('.fullscreen').css('min-height', height);
-}
-fullscreen();
-
-$(window).resize(function(event) {
-  fullscreen();
-});
-*/
-
 /*Бургер*/
 $(document).ready(function() {
   $('.header-burger'). click(function(event) {
     $('.header, .header-burger, .header-navigation').toggleClass('active_menu');
     $('body').toggleClass('body_lock');
   });
-});
-
-/*Задаем центральную позицию скрола для среднего элемента*/
-const counter = document.getElementById('counter_scroll');
-counter.scrollIntoView({
-  inline: 'center',
 });
 
 /*Спойлеры*/

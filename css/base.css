@@ -1,3 +1,5 @@
+/*--------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------base*/
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +10,12 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-:focus, :active, a:focus, a:active {
+*:focus, *:active {
   outline: none;
+  border: none;
 }
-header, nav, main, aside, footer, details, summary {
-  display: block;
+::-moz-focus-inner {
+  border: 0;
 }
 html, body {
   min-width: 100%;
@@ -23,23 +26,12 @@ html, body {
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-input, button, textarea {
-  font-family: inherit;
-  font-size: 100%;
+a, img, details, summary, figcaption, figure, hgroup, menu, 
+header, nav, main, article, aside, section, footer {
+  display: block;
 }
-input::-ms-clear {
+summary::-webkit-details-marker {
   display: none;
-}
-button, select {
-  cursor: pointer;
-  text-transform: none;
-}
-button::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-a, a:visited, a:hover {
-  text-decoration: none;
 }
 ul li {
   list-style: none;
@@ -50,27 +42,13 @@ img {
 h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit;
-  margin: 0px;
 }
-/*------------------------------------------------ibg*/
-.ibg {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-}
-.ibg img {
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  visibility: hidden;
-}
-/*-----------------------------------------------mine*/
 b, strong {
   font-weight: bolder;
+}
+mark {
+  background-color: inherit;
+  color: inherit;
 }
 sub, sup {
   font-size: 75%;
@@ -79,56 +57,101 @@ sub, sup {
   vertical-align: baseline;
 }
 sub {
-  bottom: -4px;
+  bottom: -0.25em;
 }
 sup {
-  top: -8px;
+  top: -0.5em;
 }
-button, [type="button"], [type="reset"], [type="submit"] {
-  -webkit-appearance: button;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-indent: 0;
+  border-color: inherit;
+}
+audio, canvas, video {
+  display: inline-block;
+  max-width: 100%;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden] {
+  display: none;
+}
+/*--------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------input*/
+a, a:visited, a:hover, a:focus {
+  text-decoration: none;
+  outline: none;
+}
+input::-ms-clear {
+  display: none;
+}
+input, button, textarea {
+  font-family: inherit;
+  font-size: 100%;
+}
+select {
+  text-transform: none;
 }
 textarea {
   overflow: auto;
+  resize: vertical;
+  vertical-align: top;
+}
+button, select {
+  cursor: pointer;
+  text-transform: none;
+}
+button, [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+}
+button[disabled], html input[disabled] {
+    cursor: default;
+}
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
 [type="search"] {
   -webkit-appearance: textfield;
-  outline-offset: -2px;
 }
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
-summary::-webkit-details-marker {
-  display: none;
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
 }
-/*-------------------------------------------patterns--
-
-@media (max-width: 1919.98px)
-calc(32px + 40 * ((100vw - 320px)/(1920 - 320)));
-
-@media (max-width: 1279.98px)
-calc(32px + 40 * ((100vw - 320px)/(1280 - 320)));
-                              container.padding: 24px
-                                   item.padding: 16px
-@media (max-width: 1023.98px)
-@media (max-width: 853.98px)  container.padding: 16px
-@media (max-width: 767.98px)
-@media (max-width: 599.98px)
-@media (max-width: 479.98px)
-@media (max-width: 359.98px)
-@media (max-width: 320.98px)
-
-display: -webkit-box;
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
--webkit-box-pack: center;
--ms-flex-pack: center;
--webkit-justify-content: center;
-justify-content: center;
--webkit-box-align: center;
--ms-flex-align: center;
--webkit-align-items: center;
-align-items: center;
-
-
------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------normalize-&-reseter*/
+abbr[title] {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+code, kbd, samp, pre {
+  font-family: monospace, monospace;
+  font-size: 16px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*--------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------------end*/

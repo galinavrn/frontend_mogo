@@ -1,6 +1,9 @@
 :root {
   --swiper-navigation-size: 20px;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -17,7 +20,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  display: flex;         /*добавить миксин*/
+  display: flex;
   flex-direction: column;
 }
 .container {
@@ -313,7 +316,7 @@ body {
 .fullscreen {
   position: relative;
   flex: 1 0 100%;
-  padding: 120px 0px;
+  padding: 160px 0px;
 }
 .fullscreen-image {
   position: absolute;
@@ -410,14 +413,20 @@ body {
   flex: 0 1 25%;
   padding: 0px 16px;
 }
-@media (max-width: 853px) {
-  .fullscreen-navigation_link-wrap {
-    padding: 0px 8px;
-  }
-}
 @media (max-width: 767px) {
   .fullscreen-navigation_link-wrap {
     flex: 0 1 50%;
+    padding: 0px 32px;
+  }
+}
+@media (max-width: 479.98px) {
+  .fullscreen-navigation_link-wrap {
+    padding: 0px 16px;
+  }
+}
+@media (max-width: 374.98px) {
+  .fullscreen-navigation_link-wrap {
+    padding: 0px 8px;
   }
 }
 .fullscreen-navigation_link {
@@ -435,9 +444,13 @@ body {
 }
 @media (max-width: 1023px) {
   .fullscreen-navigation_link {
-    font-size: calc(14px + 4 * ((100vw - 320px)/(1920 - 320))); /*18px*/
-    padding-top: calc(12px + 12 * ((100vw - 320px)/(1920 - 320))); /*24px*/
-    padding-bottom: calc(12px + 12 * ((100vw - 320px)/(1920 - 320))); /*24px*/
+    font-size: calc(14px + 4 * ((100vw - 320px)/(1920 - 320)));
+  }
+}
+@media (max-width: 767px) {
+  .fullscreen-navigation_link {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 .fullscreen-navigation_link::before {
@@ -2220,9 +2233,11 @@ body {
   color: #333333;
   font-size: 14px;
   text-align: center;
+  padding-bottom: 8px;
 }
-.footer-copyright span {
+.footer-copyright span, a {
   color: #f38181;
+  display: inline-block;
 }
 
 /*---------------------------------------footer-mogo*/
@@ -2516,13 +2531,6 @@ body {
   font-style: italic;
   font-size: 13px;
   line-height: 24px;
-}
-/*--------------------------------------------------*/
-/*-----------------------------------for-development*/
-.for-development {
-  width: 100%;
-  min-height: 1080px;
-  background-color: blueviolet;
 }
 /*--------------------------------------------------*/
 /*-----------------------------------------------end*/

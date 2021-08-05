@@ -1,22 +1,24 @@
-<svg width="96" height="96" version="1.1" viewBox="0 0 25.4 25.4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
- <style>
-  @media (prefers-color-scheme: dark) {
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.1" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+  <style>@media (prefers-color-scheme: dark) {
    .text {fill: black}
-  }
- </style>
- <defs>
-  <linearGradient id="linearGradient848" x1="67.091" x2="67.847" y1="3.977e-7" y2="135.88" gradientTransform="scale(.18745 .1875)" gradientUnits="userSpaceOnUse">
-   <stop stop-color="#f38181" offset="0"/>
-   <stop stop-color="#f38181" stop-opacity="0" offset="1"/>
-  </linearGradient>
-  <linearGradient id="linearGradient858" x1="67.091" x2="68.376" y2="135.47" gradientTransform="matrix(.18745 0 0 .1875 1.3103e-6 0)" gradientUnits="userSpaceOnUse">
-   <stop stop-color="#f38181" offset="0"/>
-   <stop stop-color="#fce38a" offset="1"/>
-  </linearGradient>
- </defs>
- <g>
-  <rect width="25.4" height="25.372" fill="url(#linearGradient848)" fill-rule="evenodd" stroke-width=".049602"/>
-  <rect x="1.0224e-6" y="2.0453e-6" width="25.393" height="25.4" fill="url(#linearGradient858)" stroke-width=".049602"/>
-  <text class="text" transform="scale(1.0045 .99547)" x="2.5318816" y="20.1661" fill="#ffffff" font-family="sans-serif" font-size="21.167px" letter-spacing="-.19857px" stroke-width=".049942" word-spacing="0px" style="line-height:0" xml:space="preserve"><tspan class="text" x="2.5318816" y="20.1661" fill="#ffffff" font-family="Montserrat" font-size="21.167px" font-weight="bold" stroke-width=".049942" style="font-variant-caps:normal;font-variant-east-asian:normal;font-variant-ligatures:normal;font-variant-numeric:normal">M</tspan></text>
- </g>
+  }</style>
+  <defs>
+    <linearGradient id="linearGradient848" x1="67.09" x2="67.85" y1="3.977e-7" y2="135.9" gradientTransform="scale(.1874 .1875)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f38181" offset="0"/>
+      <stop stop-color="#f38181" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient858" x1="67.09" x2="68.38" y2="135.5" gradientTransform="matrix(.1874 0 0 .1875 1.31e-6 0)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f38181" offset="0"/>
+      <stop stop-color="#fce38a" offset="1"/>
+    </linearGradient>
+  </defs>
+  <g transform="scale(3.78)">
+    <path d="m0 0h25.4v25.37h-25.4z" fill="url(#linearGradient848)" fill-rule="evenodd" stroke-width=".0496"/>
+    <path d="m1.022e-6 2.045e-6h25.39v25.4h-25.39z" fill="url(#linearGradient858)" stroke-width=".0496"/>
+    <g class="text" transform="scale(1.004 .9955)" fill="#fff" stroke-width=".04994" aria-label="M">
+      <path d="m20.99 20.17-0.04233-14.82h-2.815l-5.461 9.208-5.546-9.208h-2.836v14.82h3.217v-8.7l4.339 7.133h1.545l4.36-7.324 0.02117 8.89z"/>
+    </g>
+  </g>
+  <text font-family="Tahoma" font-size="40px" font-weight="bold" style="line-height:1.25;shape-inside:url(#rect5027);white-space:pre" xml:space="preserve"/>
 </svg>
